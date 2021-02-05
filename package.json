@@ -1,0 +1,43 @@
+{
+  "name": "creol-carbon-eth",
+  "version": "0.0.1",
+  "description": "Smart Contracts for Managing basic Carbon NFTs",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JUDOKICK/creol-carbon-eth.git"
+  },
+  "keywords": [
+    "ethereum",
+    "truffle",
+    "solidity"
+  ],
+  "author": "Joshua Bijak (JUDOKICK)",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/JUDOKICK/creol-carbon-eth/issues"
+  },
+  "homepage": "https://github.com/JUDOKICK/creol-carbon-eth#readme",
+  "dependencies": {
+    "@babel/polyfill": "^7.8.7",
+    "@openzeppelin/cli": "^2.7.1",
+    "@openzeppelin/contract-loader": "^0.6.1",
+    "@openzeppelin/contracts-ethereum-package": "^2.4.0",
+    "@openzeppelin/upgrades": "^2.7.1",
+    "@pinata/sdk": "^1.1.8",
+    "@truffle/hdwallet-provider": "^1.0.32",
+    "babel-polyfill": "^6.26.0",
+    "babel-register": "^6.26.0",
+    "dotenv": "^7.0.0",
+    "node-fetch": "^2.6.0",
+    "prompt-sync": "^4.2.0",
+    "truffle": "^5.1.15",
+    "truffle-ledger-provider": "1.0.1"
+  }
+}

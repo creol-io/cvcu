@@ -1,0 +1,27 @@
+{
+  "manifestVersion": "2.2",
+  "contracts": {
+    "VCUSubTokenFactory": "VCUSubTokenFactory",
+    "CarbonVCU": "CarbonVCU",
+    "VCUSubToken": "VCUSubToken"
+  },
+  "dependencies": {},
+  "name": "creol-carbon-eth",
+  "version": "0.1.2",
+  "compiler": {
+    "compilerSettings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": "200"
+      }
+    },
+    "typechain": {
+      "enabled": false
+    },
+    "manager": "openzeppelin",
+    "solcVersion": "0.5.16",
+    "artifactsDir": "build\\contracts",
+    "contractsDir": "contracts"
+  },
+  "telemetryOptIn": false
+}

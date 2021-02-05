@@ -1,0 +1,847 @@
+{
+  "contracts": {
+    "CarbonVCU": {
+      "address": "0x06c27e8F19d62Fb5cd86fcedFe8B379D5Eae81E5",
+      "constructorCode": "608060405234801561001057600080fd5b5061413a806100206000396000f3fe",
+      "bodyBytecodeHash": "da1d9841b43b33434d7c417f5c5ee4bc0817c897778dd626cbc6d448b2b5a623",
+      "localBytecodeHash": "1e978272eb9d5bee0a975e4c1f679c4f89025b2578c6880036909dfb0311812a",
+      "deployedBytecodeHash": "1e978272eb9d5bee0a975e4c1f679c4f89025b2578c6880036909dfb0311812a",
+      "types": {
+        "t_bool": {
+          "id": "t_bool",
+          "kind": "elementary",
+          "label": "bool"
+        },
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        },
+        "t_array:50<t_uint256>": {
+          "id": "t_array:50<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "50",
+          "kind": "array",
+          "label": "uint256[50]"
+        },
+        "t_address": {
+          "id": "t_address",
+          "kind": "elementary",
+          "label": "address"
+        },
+        "t_mapping<t_bool>": {
+          "id": "t_mapping<t_bool>",
+          "valueType": "t_bool",
+          "label": "mapping(key => bool)",
+          "kind": "mapping"
+        },
+        "t_mapping<t_address>": {
+          "id": "t_mapping<t_address>",
+          "valueType": "t_address",
+          "label": "mapping(key => address)",
+          "kind": "mapping"
+        },
+        "t_struct<Counters.Counter>": {
+          "id": "t_struct<Counters.Counter>",
+          "kind": "struct",
+          "label": "Counters.Counter",
+          "members": [
+            {
+              "label": "_value",
+              "astId": 1774,
+              "type": "t_uint256",
+              "src": "1024:14:10"
+            }
+          ]
+        },
+        "t_mapping<t_struct<Counters.Counter>>": {
+          "id": "t_mapping<t_struct<Counters.Counter>>",
+          "valueType": "t_struct<Counters.Counter>",
+          "label": "mapping(key => Counters.Counter)",
+          "kind": "mapping"
+        },
+        "t_array:dyn<t_uint256>": {
+          "id": "t_array:dyn<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "dyn",
+          "kind": "array",
+          "label": "uint256[]"
+        },
+        "t_mapping<t_array:dyn<t_uint256>>": {
+          "id": "t_mapping<t_array:dyn<t_uint256>>",
+          "valueType": "t_array:dyn<t_uint256>",
+          "label": "mapping(key => uint256[])",
+          "kind": "mapping"
+        },
+        "t_mapping<t_uint256>": {
+          "id": "t_mapping<t_uint256>",
+          "valueType": "t_uint256",
+          "label": "mapping(key => uint256)",
+          "kind": "mapping"
+        },
+        "t_string": {
+          "id": "t_string",
+          "kind": "elementary",
+          "label": "string"
+        },
+        "t_mapping<t_string>": {
+          "id": "t_mapping<t_string>",
+          "valueType": "t_string",
+          "label": "mapping(key => string)",
+          "kind": "mapping"
+        },
+        "t_array:49<t_uint256>": {
+          "id": "t_array:49<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "49",
+          "kind": "array",
+          "label": "uint256[49]"
+        },
+        "t_struct<Roles.Role>": {
+          "id": "t_struct<Roles.Role>",
+          "kind": "struct",
+          "label": "Roles.Role",
+          "members": [
+            {
+              "label": "bearer",
+              "astId": 1568,
+              "type": "t_mapping<t_bool>",
+              "src": "150:32:8"
+            }
+          ]
+        },
+        "t_struct<CarbonVCU.VCUMetaData>": {
+          "id": "t_struct<CarbonVCU.VCUMetaData>",
+          "kind": "struct",
+          "label": "CarbonVCU.VCUMetaData",
+          "members": [
+            {
+              "label": "VCUID",
+              "astId": 5706,
+              "type": "t_uint256",
+              "src": "4257:13:41"
+            },
+            {
+              "label": "VCUSerialIdx",
+              "astId": 5708,
+              "type": "t_uint256",
+              "src": "4281:20:41"
+            },
+            {
+              "label": "VCUClass",
+              "astId": 5710,
+              "type": "t_string",
+              "src": "4312:15:41"
+            },
+            {
+              "label": "VVBID",
+              "astId": 5712,
+              "type": "t_uint256",
+              "src": "4338:13:41"
+            },
+            {
+              "label": "VCSRegistry",
+              "astId": 5714,
+              "type": "t_string",
+              "src": "4362:18:41"
+            },
+            {
+              "label": "projectCountryCode",
+              "astId": 5716,
+              "type": "t_string",
+              "src": "4391:25:41"
+            },
+            {
+              "label": "scopeNumber",
+              "astId": 5718,
+              "type": "t_uint256",
+              "src": "4427:19:41"
+            },
+            {
+              "label": "projectIdentifier",
+              "astId": 5720,
+              "type": "t_uint256",
+              "src": "4457:25:41"
+            },
+            {
+              "label": "startDate",
+              "astId": 5722,
+              "type": "t_uint256",
+              "src": "4493:17:41"
+            },
+            {
+              "label": "endDate",
+              "astId": 5724,
+              "type": "t_uint256",
+              "src": "4521:15:41"
+            },
+            {
+              "label": "additionalCertInfo",
+              "astId": 5726,
+              "type": "t_uint256",
+              "src": "4547:26:41"
+            }
+          ]
+        },
+        "t_mapping<t_struct<CarbonVCU.VCUMetaData>>": {
+          "id": "t_mapping<t_struct<CarbonVCU.VCUMetaData>>",
+          "valueType": "t_struct<CarbonVCU.VCUMetaData>",
+          "label": "mapping(key => CarbonVCU.VCUMetaData)",
+          "kind": "mapping"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
+          "label": "initialized",
+          "astId": 4496,
+          "type": "t_bool",
+          "src": "757:24:30"
+        },
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
+          "label": "initializing",
+          "astId": 4498,
+          "type": "t_bool",
+          "src": "876:25:30"
+        },
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
+          "label": "______gap",
+          "astId": 4560,
+          "type": "t_array:50<t_uint256>",
+          "src": "1982:29:30"
+        },
+        {
+          "contract": "Ownable",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/ownership/Ownable.sol",
+          "label": "_owner",
+          "astId": 2083,
+          "type": "t_address",
+          "src": "526:22:14"
+        },
+        {
+          "contract": "Ownable",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/ownership/Ownable.sol",
+          "label": "______gap",
+          "astId": 2196,
+          "type": "t_array:50<t_uint256>",
+          "src": "2471:29:14"
+        },
+        {
+          "contract": "ERC165",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/introspection/ERC165.sol",
+          "label": "_supportedInterfaces",
+          "astId": 1830,
+          "type": "t_mapping<t_bool>",
+          "src": "565:52:11"
+        },
+        {
+          "contract": "ERC165",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/introspection/ERC165.sol",
+          "label": "______gap",
+          "astId": 1875,
+          "type": "t_array:50<t_uint256>",
+          "src": "1729:29:11"
+        },
+        {
+          "contract": "ERC721",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721.sol",
+          "label": "_tokenOwner",
+          "astId": 2945,
+          "type": "t_mapping<t_address>",
+          "src": "886:48:21"
+        },
+        {
+          "contract": "ERC721",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721.sol",
+          "label": "_tokenApprovals",
+          "astId": 2949,
+          "type": "t_mapping<t_address>",
+          "src": "990:52:21"
+        },
+        {
+          "contract": "ERC721",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721.sol",
+          "label": "_ownedTokensCount",
+          "astId": 2953,
+          "type": "t_mapping<t_struct<Counters.Counter>>",
+          "src": "1100:63:21"
+        },
+        {
+          "contract": "ERC721",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721.sol",
+          "label": "_operatorApprovals",
+          "astId": 2959,
+          "type": "t_mapping<t_bool>",
+          "src": "1218:73:21"
+        },
+        {
+          "contract": "ERC721",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721.sol",
+          "label": "______gap",
+          "astId": 3605,
+          "type": "t_array:50<t_uint256>",
+          "src": "16014:29:21"
+        },
+        {
+          "contract": "ERC721Enumerable",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721Enumerable.sol",
+          "label": "_ownedTokens",
+          "astId": 3628,
+          "type": "t_mapping<t_array:dyn<t_uint256>>",
+          "src": "502:50:22"
+        },
+        {
+          "contract": "ERC721Enumerable",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721Enumerable.sol",
+          "label": "_ownedTokensIndex",
+          "astId": 3632,
+          "type": "t_mapping<t_uint256>",
+          "src": "622:53:22"
+        },
+        {
+          "contract": "ERC721Enumerable",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721Enumerable.sol",
+          "label": "_allTokens",
+          "astId": 3635,
+          "type": "t_array:dyn<t_uint256>",
+          "src": "736:28:22"
+        },
+        {
+          "contract": "ERC721Enumerable",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721Enumerable.sol",
+          "label": "_allTokensIndex",
+          "astId": 3639,
+          "type": "t_mapping<t_uint256>",
+          "src": "835:51:22"
+        },
+        {
+          "contract": "ERC721Enumerable",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721Enumerable.sol",
+          "label": "______gap",
+          "astId": 3970,
+          "type": "t_array:50<t_uint256>",
+          "src": "9053:29:22"
+        },
+        {
+          "contract": "ERC721Metadata",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721Metadata.sol",
+          "label": "_name",
+          "astId": 3990,
+          "type": "t_string",
+          "src": "323:20:23"
+        },
+        {
+          "contract": "ERC721Metadata",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721Metadata.sol",
+          "label": "_symbol",
+          "astId": 3992,
+          "type": "t_string",
+          "src": "370:22:23"
+        },
+        {
+          "contract": "ERC721Metadata",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721Metadata.sol",
+          "label": "_tokenURIs",
+          "astId": 3996,
+          "type": "t_mapping<t_string>",
+          "src": "438:45:23"
+        },
+        {
+          "contract": "ERC721Metadata",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721Metadata.sol",
+          "label": "_baseURI",
+          "astId": 3998,
+          "type": "t_string",
+          "src": "506:23:23"
+        },
+        {
+          "contract": "ERC721Metadata",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721Metadata.sol",
+          "label": "______gap",
+          "astId": 4168,
+          "type": "t_array:49<t_uint256>",
+          "src": "4297:29:23"
+        },
+        {
+          "contract": "MinterRole",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/access/roles/MinterRole.sol",
+          "label": "_minters",
+          "astId": 1665,
+          "type": "t_struct<Roles.Role>",
+          "src": "327:27:9"
+        },
+        {
+          "contract": "MinterRole",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/access/roles/MinterRole.sol",
+          "label": "______gap",
+          "astId": 1765,
+          "type": "t_array:50<t_uint256>",
+          "src": "1193:29:9"
+        },
+        {
+          "contract": "ERC721MetadataMintable",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721MetadataMintable.sol",
+          "label": "______gap",
+          "astId": 4238,
+          "type": "t_array:50<t_uint256>",
+          "src": "1057:29:24"
+        },
+        {
+          "contract": "CarbonVCU",
+          "path": "contracts/CarbonVCU/CarbonVCU.sol",
+          "label": "genericSubTokenFactoryInterface",
+          "astId": 5697,
+          "type": "t_address",
+          "src": "3683:67:41"
+        },
+        {
+          "contract": "CarbonVCU",
+          "path": "contracts/CarbonVCU/CarbonVCU.sol",
+          "label": "genericSubTokenInterface",
+          "astId": 5699,
+          "type": "t_address",
+          "src": "3757:53:41"
+        },
+        {
+          "contract": "CarbonVCU",
+          "path": "contracts/CarbonVCU/CarbonVCU.sol",
+          "label": "creolSuper",
+          "astId": 5704,
+          "type": "t_address",
+          "src": "4181:25:41"
+        },
+        {
+          "contract": "CarbonVCU",
+          "path": "contracts/CarbonVCU/CarbonVCU.sol",
+          "label": "tokenIDtoVCUMetadata",
+          "astId": 5731,
+          "type": "t_mapping<t_struct<CarbonVCU.VCUMetaData>>",
+          "src": "4629:60:41"
+        },
+        {
+          "contract": "CarbonVCU",
+          "path": "contracts/CarbonVCU/CarbonVCU.sol",
+          "label": "tokenIDtoSubtokenAddress",
+          "astId": 5735,
+          "type": "t_mapping<t_address>",
+          "src": "4696:60:41"
+        },
+        {
+          "contract": "CarbonVCU",
+          "path": "contracts/CarbonVCU/CarbonVCU.sol",
+          "label": "NFTisTokenized",
+          "astId": 5739,
+          "type": "t_mapping<t_bool>",
+          "src": "4763:39:41"
+        },
+        {
+          "contract": "CarbonVCU",
+          "path": "contracts/CarbonVCU/CarbonVCU.sol",
+          "label": "VCUSerialIdxExists",
+          "astId": 5743,
+          "type": "t_mapping<t_bool>",
+          "src": "4809:43:41"
+        },
+        {
+          "contract": "CarbonVCU",
+          "path": "contracts/CarbonVCU/CarbonVCU.sol",
+          "label": "proxyAdmin",
+          "astId": 5745,
+          "type": "t_address",
+          "src": "4893:26:41"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": []
+      }
+    },
+    "VCUSubToken": {
+      "address": "0x24366ACF138c89b94215d5bcCA130488D4DF25c6",
+      "constructorCode": "608060405234801561001057600080fd5b50611822806100206000396000f3fe",
+      "bodyBytecodeHash": "10b39f8cdd252467f9e55a4cd93842699ce9fe99dfa489400081d8200e7f1a68",
+      "localBytecodeHash": "1b3857ca923ffccd3b2b7fccd947f59efa3cc30804ed43c48eb2e2ecb842737b",
+      "deployedBytecodeHash": "1b3857ca923ffccd3b2b7fccd947f59efa3cc30804ed43c48eb2e2ecb842737b",
+      "types": {
+        "t_bool": {
+          "id": "t_bool",
+          "kind": "elementary",
+          "label": "bool"
+        },
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        },
+        "t_array:50<t_uint256>": {
+          "id": "t_array:50<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "50",
+          "kind": "array",
+          "label": "uint256[50]"
+        },
+        "t_mapping<t_uint256>": {
+          "id": "t_mapping<t_uint256>",
+          "valueType": "t_uint256",
+          "label": "mapping(key => uint256)",
+          "kind": "mapping"
+        },
+        "t_struct<Roles.Role>": {
+          "id": "t_struct<Roles.Role>",
+          "kind": "struct",
+          "label": "Roles.Role",
+          "members": [
+            {
+              "label": "bearer",
+              "astId": 1568,
+              "type": "t_mapping<t_bool>",
+              "src": "150:32:8"
+            }
+          ]
+        },
+        "t_mapping<t_bool>": {
+          "id": "t_mapping<t_bool>",
+          "valueType": "t_bool",
+          "label": "mapping(key => bool)",
+          "kind": "mapping"
+        },
+        "t_address": {
+          "id": "t_address",
+          "kind": "elementary",
+          "label": "address"
+        },
+        "t_string": {
+          "id": "t_string",
+          "kind": "elementary",
+          "label": "string"
+        },
+        "t_uint8": {
+          "id": "t_uint8",
+          "kind": "elementary",
+          "label": "uint8"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
+          "label": "initialized",
+          "astId": 4496,
+          "type": "t_bool",
+          "src": "757:24:30"
+        },
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
+          "label": "initializing",
+          "astId": 4498,
+          "type": "t_bool",
+          "src": "876:25:30"
+        },
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
+          "label": "______gap",
+          "astId": 4560,
+          "type": "t_array:50<t_uint256>",
+          "src": "1982:29:30"
+        },
+        {
+          "contract": "ERC20",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/ERC20.sol",
+          "label": "_balances",
+          "astId": 2216,
+          "type": "t_mapping<t_uint256>",
+          "src": "1418:46:15"
+        },
+        {
+          "contract": "ERC20",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/ERC20.sol",
+          "label": "_allowances",
+          "astId": 2222,
+          "type": "t_mapping<t_uint256>",
+          "src": "1471:69:15"
+        },
+        {
+          "contract": "ERC20",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/ERC20.sol",
+          "label": "_totalSupply",
+          "astId": 2224,
+          "type": "t_uint256",
+          "src": "1547:28:15"
+        },
+        {
+          "contract": "ERC20",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/ERC20.sol",
+          "label": "______gap",
+          "astId": 2608,
+          "type": "t_array:50<t_uint256>",
+          "src": "8172:29:15"
+        },
+        {
+          "contract": "ERC20Burnable",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/ERC20Burnable.sol",
+          "label": "______gap",
+          "astId": 2649,
+          "type": "t_array:50<t_uint256>",
+          "src": "761:29:16"
+        },
+        {
+          "contract": "MinterRole",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/access/roles/MinterRole.sol",
+          "label": "_minters",
+          "astId": 1665,
+          "type": "t_struct<Roles.Role>",
+          "src": "327:27:9"
+        },
+        {
+          "contract": "MinterRole",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/access/roles/MinterRole.sol",
+          "label": "______gap",
+          "astId": 1765,
+          "type": "t_array:50<t_uint256>",
+          "src": "1193:29:9"
+        },
+        {
+          "contract": "ERC20Mintable",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/ERC20Mintable.sol",
+          "label": "______gap",
+          "astId": 2841,
+          "type": "t_array:50<t_uint256>",
+          "src": "831:29:19"
+        },
+        {
+          "contract": "VCUSubToken",
+          "path": "contracts/VCUSubToken/VCUSubToken.sol",
+          "label": "parentVCU",
+          "astId": 6380,
+          "type": "t_address",
+          "src": "2975:24:44"
+        },
+        {
+          "contract": "VCUSubToken",
+          "path": "contracts/VCUSubToken/VCUSubToken.sol",
+          "label": "creolSuper",
+          "astId": 6382,
+          "type": "t_address",
+          "src": "3012:25:44"
+        },
+        {
+          "contract": "VCUSubToken",
+          "path": "contracts/VCUSubToken/VCUSubToken.sol",
+          "label": "vcuOwner",
+          "astId": 6384,
+          "type": "t_address",
+          "src": "3050:23:44"
+        },
+        {
+          "contract": "VCUSubToken",
+          "path": "contracts/VCUSubToken/VCUSubToken.sol",
+          "label": "transferEnabled",
+          "astId": 6386,
+          "type": "t_bool",
+          "src": "3086:27:44"
+        },
+        {
+          "contract": "VCUSubToken",
+          "path": "contracts/VCUSubToken/VCUSubToken.sol",
+          "label": "_name",
+          "astId": 6388,
+          "type": "t_string",
+          "src": "3126:20:44"
+        },
+        {
+          "contract": "VCUSubToken",
+          "path": "contracts/VCUSubToken/VCUSubToken.sol",
+          "label": "_symbol",
+          "astId": 6390,
+          "type": "t_string",
+          "src": "3153:22:44"
+        },
+        {
+          "contract": "VCUSubToken",
+          "path": "contracts/VCUSubToken/VCUSubToken.sol",
+          "label": "_decimals",
+          "astId": 6392,
+          "type": "t_uint8",
+          "src": "3182:24:44"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": []
+      }
+    },
+    "VCUSubTokenFactory": {
+      "address": "0x224EDFA331DFD153FA1fc47Ffa6eaF38252dC815",
+      "constructorCode": "6080604052612791806100136000396000f3fe",
+      "bodyBytecodeHash": "5bbfe24928e452761a3ee4dd70b8c089f5ae1c5f5346cb96ac57e441559b6f03",
+      "localBytecodeHash": "2c739874656a019a82c7a96cb55a901119c3bab416d0ba3fe3ee5fd1a561e716",
+      "deployedBytecodeHash": "2c739874656a019a82c7a96cb55a901119c3bab416d0ba3fe3ee5fd1a561e716",
+      "types": {
+        "t_bool": {
+          "id": "t_bool",
+          "kind": "elementary",
+          "label": "bool"
+        },
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        },
+        "t_array:50<t_uint256>": {
+          "id": "t_array:50<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "50",
+          "kind": "array",
+          "label": "uint256[50]"
+        },
+        "t_address": {
+          "id": "t_address",
+          "kind": "elementary",
+          "label": "address"
+        },
+        "t_array:dyn<t_address>": {
+          "id": "t_array:dyn<t_address>",
+          "valueType": "t_address",
+          "length": "dyn",
+          "kind": "array",
+          "label": "address[]"
+        },
+        "t_mapping<t_bool>": {
+          "id": "t_mapping<t_bool>",
+          "valueType": "t_bool",
+          "label": "mapping(key => bool)",
+          "kind": "mapping"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
+          "label": "initialized",
+          "astId": 4496,
+          "type": "t_bool",
+          "src": "757:24:30"
+        },
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
+          "label": "initializing",
+          "astId": 4498,
+          "type": "t_bool",
+          "src": "876:25:30"
+        },
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
+          "label": "______gap",
+          "astId": 4560,
+          "type": "t_array:50<t_uint256>",
+          "src": "1982:29:30"
+        },
+        {
+          "contract": "Ownable",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/ownership/Ownable.sol",
+          "label": "_owner",
+          "astId": 2083,
+          "type": "t_address",
+          "src": "526:22:14"
+        },
+        {
+          "contract": "Ownable",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/ownership/Ownable.sol",
+          "label": "______gap",
+          "astId": 2196,
+          "type": "t_array:50<t_uint256>",
+          "src": "2471:29:14"
+        },
+        {
+          "contract": "VCUSubTokenFactory",
+          "path": "contracts/VCUSubToken/VCUSubTokenFactory.sol",
+          "label": "VCUSubTokens",
+          "astId": 6725,
+          "type": "t_array:dyn<t_address>",
+          "src": "2781:29:45"
+        },
+        {
+          "contract": "VCUSubTokenFactory",
+          "path": "contracts/VCUSubToken/VCUSubTokenFactory.sol",
+          "label": "VCUSubTokenExists",
+          "astId": 6729,
+          "type": "t_mapping<t_bool>",
+          "src": "2817:42:45"
+        },
+        {
+          "contract": "VCUSubTokenFactory",
+          "path": "contracts/VCUSubToken/VCUSubTokenFactory.sol",
+          "label": "creolApp",
+          "astId": 6731,
+          "type": "t_address",
+          "src": "2866:20:45"
+        },
+        {
+          "contract": "VCUSubTokenFactory",
+          "path": "contracts/VCUSubToken/VCUSubTokenFactory.sol",
+          "label": "ApprovedCarbonVCUAddress",
+          "astId": 6733,
+          "type": "t_address",
+          "src": "2893:39:45"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": []
+      }
+    }
+  },
+  "solidityLibs": {},
+  "proxies": {
+    "creol-carbon-eth/VCUSubTokenFactory": [
+      {
+        "address": "0x504d4bf48eADDA6715dFFaf8D1b4b8fa16e2EB6b",
+        "version": "0.1.2",
+        "implementation": "0x224EDFA331DFD153FA1fc47Ffa6eaF38252dC815",
+        "admin": "0x659c6fFaF9477004E560C3Fec4acfC86a5C7C082",
+        "kind": "Upgradeable"
+      }
+    ],
+    "creol-carbon-eth/CarbonVCU": [
+      {
+        "address": "0xD7aa9d8eB40d0F6b6fD8540b29C44779e5a4860e",
+        "version": "0.1.2",
+        "implementation": "0x06c27e8F19d62Fb5cd86fcedFe8B379D5Eae81E5",
+        "admin": "0x659c6fFaF9477004E560C3Fec4acfC86a5C7C082",
+        "kind": "Upgradeable"
+      }
+    ]
+  },
+  "manifestVersion": "2.2",
+  "version": "0.1.2",
+  "app": {
+    "address": "0x6155883515c96C9459004bD78A18F9F4e4D61995"
+  },
+  "package": {
+    "address": "0x8904369D620579F7D7c3377A7661313829c50Dc2"
+  },
+  "provider": {
+    "address": "0xc1Ed78C37FD1539B67Ff17Fa463E69056fC4A1d3"
+  },
+  "proxyAdmin": {
+    "address": "0x659c6fFaF9477004E560C3Fec4acfC86a5C7C082"
+  }
+}
