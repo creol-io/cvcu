@@ -1,6 +1,6 @@
 {
 	"image": "https://ipfs.io/ipfs/QmbzgU7fcgnGJmDUkPENuJCLXFHsiTAkNs2iutRLPC9VXE",
-	"external_url": "https://beta.creol.io/",
+	"external_url": "https://offset.creol.io/",
 	"description": "This project reduces deforestation in the Peruvian Amazon by improving forest management and promoting sustainable nut harvesting. This will help protect critical rainforest habitat and endangered species, while supporting the livelihoods of indigenous communities.",
 	"name": "REDD Peru Madre de Dios",
 	"attributes": [{
@@ -50,6 +50,10 @@
 		{
 			"trait_type": "Additional Certification Info",
 			"value": "None"
+		},
+		{
+			"trait_type": "VCU Retirement Certificate",
+			"value": "https://ipfs.io/ipfs/QmdJTs8KewdHyFnjWjDbFbPBj6gZ2eTJ3K4NyEeGpCmcjr"
 		}
 	],
 	"background_color": "ffffff"

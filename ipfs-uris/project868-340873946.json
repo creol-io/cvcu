@@ -1,0 +1,61 @@
+{
+  "image": "https://ipfs.io/ipfs/QmbzgU7fcgnGJmDUkPENuJCLXFHsiTAkNs2iutRLPC9VXE",
+  "external_url": "https://offset.creol.io/",
+  "description": "This project reduces deforestation in the Peruvian Amazon by improving forest management and promoting sustainable nut harvesting. This will help protect critical rainforest habitat and endangered species, while supporting the livelihoods of indigenous communities.",
+  "name": "REDD Peru Madre de Dios",
+  "attributes": [
+    {
+      "trait_type": "VERRA Project Link",
+      "value": "https://registry.verra.org/app/projectDetail/VCS/868"
+    },
+    {
+      "trait_type": "VCU ID Number",
+      "value": "6750"
+    },
+    {
+      "trait_type": "Unique VCU Serial ID",
+      "value": 340873946
+    },
+    {
+      "trait_type": "VCU Class",
+      "value": "Verified Carbon Unit"
+    },
+    {
+      "trait_type": "VVB ID",
+      "value": "6"
+    },
+    {
+      "trait_type": "VCS Registry Name",
+      "value": "MER"
+    },
+    {
+      "trait_type": "Project Country",
+      "value": "Peru"
+    },
+    {
+      "trait_type": "Scope Number",
+      "value": "Agriculture Forestry and Other Land Use"
+    },
+    {
+      "trait_type": "Project ID",
+      "value": "868"
+    },
+    {
+      "trait_type": "Project Start Date",
+      "value": "January 1, 2010"
+    },
+    {
+      "trait_type": "Project End Date",
+      "value": "December 31, 2012"
+    },
+    {
+      "trait_type": "Additional Certification Info",
+      "value": "None"
+    },
+    {
+      "trait_type": "VCU Retirement Certificate",
+      "value": "https://ipfs.io/ipfs/QmdJTs8KewdHyFnjWjDbFbPBj6gZ2eTJ3K4NyEeGpCmcjr"
+    }
+  ],
+  "background_color": "ffffff"
+}
