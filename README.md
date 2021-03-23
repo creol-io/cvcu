@@ -4,7 +4,7 @@
     <img src="https://github.com/JUDOKICK/creol-react-dapp-oz/blob/master/src/assets/images/Logo-FullSizeGif.gif">
 </p>
 
-[www.beta.creol.io](http://www.beta.creol.io)
+[www.offset.creol.io](http://www.offset.creol.io)
 
 Creol Carbon Eth is the master repo for smart contracts pertaining to the Creol Carbon ecosystem. This includes two suites of contracts
 
@@ -20,7 +20,7 @@ The contract suite also includes interfaces as well as VCUSubtokenFactory for us
 
 1. Clone repo and Install npm dependencies
     ```javascript
-   git clone https://github.com/JUDOKICK/creol-carbon-eth.git
+   git clone https://github.com/creol-io/creol-carbon-eth.git
     yarn install
     ```
 2. Build and compile the smart contracts
